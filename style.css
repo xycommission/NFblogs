@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Serif", serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #726e41;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav-links a {
+  color: #fff;
+}
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.menu li:hover {
+  background-color: #f6e7d4;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.menu li a:hover {
+  color: #000;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.menu li {
+  padding: 5px 14px;
+}
+/* section styling */
+/* about section */
+section#About div{
+  display: flex;
+  align-items: center;
+  background-color: #f6e7d4;
+  padding: 40px;
+}
+section#About div div {
+    display: flex;
+    flex-direction: column;
+}
+section#About header{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    background-color: #f6e7d4;
+    margin-top: 80px;
+}
+section#About div div p {
+    line-height: 1.7;
+    font-size: 20px;
+}
+section#About img {
+    max-width: 30%;
+}
+/* latest blog section */
+section#Latest_Blog {
+  background-color: #726e41;
+  color: #fff;
+}
+section#Latest_Blog p {
+    margin: 15px 40px 0;
+    font-size: 20px;
+    line-height: 1.7;
+    padding-bottom: 15px;
+    text-align: center;
+}
+section#Latest_Blog p.link{
+    text-align: center;
+}
+section#Latest_Blog p.link a{
+    color: #fff;
+}
+section#Latest_Blog header{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+/* contact section */
+section#Contact {
+    background-color: #f6e7d4;
+}
+section#Contact header{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+section#Contact div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 0 0 20px;
+    gap: 10px;
+}
+section#Contact div a{
+    color: #000;
+}
+/* footer styling */
+footer {
+    background-color: #726e41;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 480px) {
+  section#About div {
+    flex-direction: column;
+    padding: 15px;
+  }
+  section#About div div p {
+    line-height: 2;
+    font-size: 18px;
+  }
+  section#About img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #726e41;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #f6e7d4;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+}
