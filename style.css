@@ -178,6 +178,18 @@ input[type="checkbox"] {
   section#About img {
     max-width: 100%;
   }
+  section#Latest_Blog p {
+    font-size: 16px;
+    margin: 0;
+  }
+  section#Latest_Blog p.blog {
+    font-size: 18px;
+    max-width: 90%;
+    padding: 30px;
+  }
+  section#Latest_Blog p.blog img {
+    max-width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .menu {
