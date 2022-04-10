@@ -26,6 +26,7 @@ li {
   top: 0;
   left: 0;
   right: 0;
+  border-bottom: 2px solid #f6e7d4;
 }
 .nav-links a {
   color: #fff;
@@ -55,29 +56,29 @@ li {
 }
 /* section styling */
 /* about section */
-section#About div{
+section#About div {
   display: flex;
   align-items: center;
   background-color: #f6e7d4;
   padding: 40px;
 }
 section#About div div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-section#About header{
-    text-align: center;
-    font-size: 50px;
-    padding: 20px;
-    background-color: #f6e7d4;
-    margin-top: 80px;
+section#About header {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  background-color: #f6e7d4;
+  margin-top: 80px;
 }
 section#About div div p {
-    line-height: 1.7;
-    font-size: 20px;
+  line-height: 1.7;
+  font-size: 20px;
 }
 section#About img {
-    max-width: 30%;
+  max-width: 30%;
 }
 /* latest blog section */
 section#Latest_Blog {
@@ -85,49 +86,73 @@ section#Latest_Blog {
   color: #fff;
 }
 section#Latest_Blog p {
-    margin: 15px 40px 0;
-    font-size: 20px;
-    line-height: 1.7;
-    padding-bottom: 15px;
-    text-align: center;
+  margin: 15px 40px 0;
+  font-size: 20px;
+  line-height: 1.7;
+  padding-bottom: 15px;
+  text-align: center;
 }
-section#Latest_Blog p.link{
-    text-align: center;
+section#Latest_Blog p.blog {
+  max-width: 60%;
+  margin: 0 auto;
+  background-color: #f6e7d4;
+  color: #000;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-section#Latest_Blog p.link a{
-    color: #fff;
+section#Latest_Blog p.blog img {
+  max-width: 50%;
+  margin: 0 auto;
+  border: 1px solid #000;
 }
-section#Latest_Blog header{
-    text-align: center;
-    font-size: 50px;
-    padding: 20px;
+section#Latest_Blog p.blog i {
+  color: red;
+}
+section#Latest_Blog p.blog a {
+  color: black;
+  text-decoration: underline;
+}
+section#Latest_Blog p.blog a:hover {
+  color: #fff;
+}
+section#Latest_Blog p.link {
+  text-align: center;
+}
+section#Latest_Blog p.link a {
+  color: #fff;
+}
+section#Latest_Blog header {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
 }
 /* contact section */
 section#Contact {
-    background-color: #f6e7d4;
+  background-color: #f6e7d4;
 }
-section#Contact header{
-    text-align: center;
-    font-size: 50px;
-    padding: 20px;
+section#Contact header {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
 }
 section#Contact div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    padding: 0 0 20px;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  padding: 0 0 20px;
+  gap: 10px;
 }
-section#Contact div a{
-    color: #000;
+section#Contact div a {
+  color: #000;
 }
 /* footer styling */
 footer {
-    background-color: #726e41;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
+  background-color: #726e41;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
 }
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
